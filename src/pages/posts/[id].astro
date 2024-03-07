@@ -1,0 +1,41 @@
+---
+export async function getStaticPaths() {
+  const data = await fetch('https://jsonplaceholder.typicode.com/posts');
+  const posts = await data.json();
+  const postIds = posts.flatMap(post => {
+    return {
+      params: {
+        id: post.id.toString()
+      },
+      props: { post }
+    }
+  })
+  return postIds
+}
+
+import {Button} from '@nextui-org/react';
+
+const {post} = Astro.props;
+---
+
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <style is:global>
+    @import "../../assets/style/global.css";
+  </style>
+  <title>Welcome to Astro</title>
+</head>
+
+<body>
+<main class="p-5">
+  <div class="p-5 rounded shadow">
+    <h1 class="mb-5 text-3xl font-bold">{post.title}</h1>
+    <hr>
+    <p class="mt-5">{post.body}</p>
+    <Button color="primary" client:visible>My button</Button>
+  </div>
+</main>
+</body>
+</html>
