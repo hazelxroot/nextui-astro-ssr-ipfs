@@ -1,10 +1,6 @@
-# An IPFS Astro Test, made by Spencer Bills.
+# An Astro + Next UI + IPFS Test
 
-Hello everyone! This is a simple test to see if Astro can be used on blockchain technology pretty easily. I uploaded the file to a service called Pinata.
+This is a proof-of-concept to show how blockchain technology can utilize Astro, along with React and a framework like Next UI, to create decentralized IPFS websites.
 
-Please email me at spencebills0@gmail.com if you have any questions.
-
-Current CID: QmXma6237bByDhJLGZDoaVwreUmFVsKeuV31RDQckmNR2R
-Link: https://ipfs.io/ipfs/QmXma6237bByDhJLGZDoaVwreUmFVsKeuV31RDQckmNR2R/
-
-BCH address: bitcoincash:qz8k8y59juyt4k8594v4rf9cp5uzmgrctcjklzq502
+Current CID: Qmcj4A1v25hezFg3vyuuYioR7B63bBg4yK1EweHEb1HbQ5
+Link: https://gw.w3ipfs.org.cn/ipfs/Qmcj4A1v25hezFg3vyuuYioR7B63bBg4yK1EweHEb1HbQ5/?filename=dist-2
